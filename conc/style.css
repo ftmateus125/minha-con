@@ -1,0 +1,258 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+
+header {
+    background-color: #111;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo h1 {
+    color: #fff;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff6600; 
+}
+
+
+#banner {
+    background-image: url('img/golf gti.png'); 
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 80px 0;
+    text-align: center;
+}
+
+#banner .content h2 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#banner .content p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#banner .content .btn {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+#banner .content .btn:hover {
+    background-color: #ff4500;
+}
+
+#carros-list {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+}
+
+.carros-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.carro {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.carro img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.carro h3 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+}
+
+.carro p {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.carro .preco {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ff6600;
+}
+
+
+.carro:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+
+#carros-list {
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+
+@media (max-width: 768px) {
+    #banner .content h2 {
+        font-size: 36px;
+    }
+
+    #banner .content p {
+        font-size: 18px;
+    }
+
+    #carros-list {
+        padding: 30px 0;
+    }
+
+    .carros-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .carro {
+        width: 80%;
+    }
+}
+
+
+
+
+#banner {
+    background-image: url('img/golf gti.png');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 80px 0;
+    text-align: center;
+}
+
+#banner h2 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#banner p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#banner .btn-primary {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+#banner .btn-primary:hover {
+    background-color: #ff4500;
+}
+
+
+#destaques {
+    background-color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+#destaques h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.carros-destaque {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+.carro-item {
+    background-color: #f8f8f8;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 250px;
+}
+
+.carro-item img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.carro-item h3 {
+    margin-top: 1rem;
+    font-size: 1.8rem;
+}
+
+.carro-item p {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+.carro-item .preco {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ff6600;
+}
+
+.carro-item .btn-secundario {
+    background-color: #111;
+    color: white;
+    padding: 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.carro-item .btn-secundario:hover {
+    background-color: #ff6600;
+}
